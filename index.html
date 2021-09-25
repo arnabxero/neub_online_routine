@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+</head>
+<body>
+<span id="dayis"></span>
+
+  <script>
+    var d = new Date();
+	var weekday = new Array(7);
+	var sat = "Course Code:Title_____________________Time___________Teacher_____________Class Link</br>"+
+			  "CSE 456:Machine Learning LAB_________11:30 AM_______Mehedi Sadat________https://arnabxerp.github.io";
+			  
+	var sun = "";
+	var mon = "";
+	var tue = "";
+	var wed = "";
+	var thu = "";
+	var fri = "";
+	
+	weekday[0] =  sat;
+	weekday[1] = "Monday";
+	weekday[2] = "Tuesday";
+	weekday[3] = "Wednesday";
+	weekday[4] = "Thursday";
+	weekday[5] = "Friday";
+	weekday[6] = sat;
+
+	var n = weekday[d.getDay()];
+    document.getElementById("dayis").innerHTML = n;
+  </script>
+</body>
+
+</html>
